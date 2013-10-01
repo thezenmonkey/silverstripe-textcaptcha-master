@@ -1,0 +1,15 @@
+{
+    "name": "thezenmonkey/textcaptcha",
+    "description": "SpamProtector Module that uses TextCaptcha for Spam Protection",
+    "type": "silverstripe-module",
+    "keywords": ["silverstripe", "Spam", "Protection", "TextCaptcha"],
+    "license": "BSD-3-Clause",
+    "authors": [{
+        "name": "Richard Rudy",
+        "email": "designplusawesome@gmail.com"
+    }],
+    "require": {
+        "silverstripe/framework": ">=3.1.x-dev,<4.0",
+        "silverstripe/silverstripe-spamprotection": ">=1.0"
+    }
+}
