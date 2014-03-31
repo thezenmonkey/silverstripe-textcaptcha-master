@@ -10,6 +10,6 @@
     }],
     "require": {
         "silverstripe/framework": ">=3.1.x-dev,<4.0",
-        "silverstripe/silverstripe-spamprotection": ">=1.0"
+        "silverstripe/silverstripe-spamprotection": "*"
     }
 }
