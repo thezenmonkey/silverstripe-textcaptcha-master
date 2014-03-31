@@ -9,6 +9,6 @@
         "email": "designplusawesome@gmail.com"
     }],
     "require": {
-        "silverstripe/spamprotection": "dev-master"
+        "silverstripe/spamprotection": "*"
     }
 }
