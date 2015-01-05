@@ -9,7 +9,7 @@ class TextCaptchaProtector implements SpamProtector {
 		return new TextCaptchaField($name, $title, $value, $form, $rightTitle);
 	}
 	
-	public function sendFeedback($object = null, $feedback = ""){
+	public function setFieldMapping($fieldMapping){
 		return true;
 	}
 }

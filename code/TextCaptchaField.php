@@ -1,11 +1,9 @@
 <?php
 
-class TextCaptchaField extends SpamProtectorField {
-	
-	protected static $api_key;
+class TextCaptchaField extends FormField {
 	
 	function Field($properties = array()) {
-		$key = self::$api_key;
+		$key = $this->config()->ApiKey;
 		
 		$question = $this->getQuestion();
 			
@@ -77,9 +75,9 @@ HTML;
 	
 	
 	function getCaptcha() {
+		$key = TextCaptchaField::config()->ApiKey;
 		
-		
-		$url = 'http://api.textcaptcha.com/'.self::$api_key;
+		$url = 'http://api.textcaptcha.com/'.$key;
 		//if(Session::get('setCaptcha') == true && Session::get('question') === null && Session::get('captchaFail') != true) {}
 		
 		try {
@@ -118,6 +116,6 @@ HTML;
 	}
 	
 	public static function CaptchaAPI($key = "demo") {
-		self::$api_key = $key;
+		$key = TextCaptchaField::config()->ApiKey;
 	}
 }
